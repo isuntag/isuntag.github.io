@@ -18,28 +18,38 @@
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	  <link rel="manifest" href="/site.webmanifest">
-	  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	  <link rel="manifest" href="site.webmanifest">
+	  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 	  <meta name="msapplication-TileColor" content="#5bbad5">
 	  <meta name="theme-color" content="#ffffff">
 	</head>
 
 	<body>
 		<div class="container-fluid vh-100">
+			<nav id="mobileNav" class="overlay">
+				<div class="mobileNavClose">&times;</div>
+			  <div class="overlay-content">
+			    <a href="#header" class="active">Home</a>
+					<a href="#about">About</a>
+				  <a href="#portfolio">Portfolio</a>
+				  <a href="#contact">Contact</a>
+			  </div>
+			</nav>
+			<div class="mobileNavOpen"><i class="fas fa-bars"></i></div>
 			<nav id="smallNav" class="row justify-content-center">
 					<ul class="col-12 list-inline">
-						<li class="col-12 col-sm-auto list-inline-item"><a href="#header" class="active">Home</a></li>
-					  <li class="col-12 col-sm-auto list-inline-item"><a href="#about">About</a></li>
-					  <li class="col-12 col-sm-auto list-inline-item"><a href="#portfolio">Portfolio</a></li>
-					  <li class="col-12 col-sm-auto list-inline-item"><a href="#contact">Contact</a></li>
+						<li class="col-auto list-inline-item"><a href="#header" class="active">Home</a></li>
+					  <li class="col-auto list-inline-item"><a href="#about">About</a></li>
+					  <li class="col-auto list-inline-item"><a href="#portfolio">Portfolio</a></li>
+					  <li class="col-auto list-inline-item"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			<section id="header" class="row">
 				<div class="col-12">
-					<nav class="row justify-content-center">
+					<nav id="largeNav" class="row justify-content-center">
 						<ul class="col-12 col-sm-6 order-2 col-lg order-lg-1 text-sm-right list-inline sm-nowrap">
 							<li class="col-12 col-sm-auto list-inline-item"><a href="#header" class="active">Home</a></li>
 						  <li class="col-12 col-sm-auto list-inline-item"><a href="#about">About</a></li>
@@ -62,7 +72,7 @@
 			</section>
 
 			<section id="about" class="row justify-content-center align-items-center">
-				<div class="col-12 col-sm-6 col-lg-4"><img src="https://static1.squarespace.com/static/5d6847885c574100016fa6f3/t/5d6851ea30ceb400011ab7ee/1567118811560/IsaacSuntag2.jpg?format=1000w"></div>
+				<div class="col-12 col-sm-6 col-lg-4"><img src="static/IsaacSuntag.jpg" alt="Isaac Suntag headshot" class="headshot"/></div>
 				<div class="col-12 col-sm-6 col-lg-4">
 					<h1>Who Am I?</h1>
 					<p>I'm a full stack developer with a passion for front end development. I enjoy and take pride in creating intuitive and dynamic user experiences. I started my front end development experience at the age of 8 and have continued to learn and refine my code ever since.</p>
@@ -79,26 +89,26 @@
 				<div class="col-12">
 					<div class="row justify-content-center">
 						<div class="project col-8">
-							<img src="https://static1.squarespace.com/static/5d6847885c574100016fa6f3/t/5d6851ea30ceb400011ab7ee/1567118811560/IsaacSuntag2.jpg?format=1000w">
-							<h3>Subscription Service</h3>
-							<h4>Java</h4>
-							<p>Subscription application that allows users to select from active packages and select a monthly delivery day. Focused on datetime restrictions and validations. Created with Spring Tool Suite and Tomcat. Created in 3 hours.</p>
+							<img src="static/doctor-appt.png" alt="Image of the Doctor's Appointments Project"/>
+							<h3>Doctor's Appointments</h3>
+							<h4>MEAN</h4>
+							<p>Scheduling application that allows users to book appointments based on the doctor’s availability. The focus of this project was datetime validations in both the front end with Angular and the back end with MongoDB.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 ">
 					<div class="row justify-content-around">
 						<div class="project col-12 col-sm-5">
-							<img src="https://static1.squarespace.com/static/5d6847885c574100016fa6f3/t/5d6851ea30ceb400011ab7ee/1567118811560/IsaacSuntag2.jpg?format=1000w">
-							<h3>Doctor's Appointments</h3>
-							<h4>MEAN</h4>
-							<p>Scheduling application that allows users to book appointments based on the doctor’s availability. The focus of this project was datetime validations in both the front end with Angular and the back end with MongoDB. Created in 4.5 hours.</p>
+							<img src="" alt=""/>
+							<h3>Subscription Service</h3>
+							<h4>Java</h4>
+							<p>Subscription application that allows users to select from active packages and select a monthly delivery day. Focused on datetime restrictions and validations. Created with Spring Tool Suite and Tomcat.</p>
 						</div>
 						<div class="project col-12 col-sm-5">
-							<img src="https://static1.squarespace.com/static/5d6847885c574100016fa6f3/t/5d6851ea30ceb400011ab7ee/1567118811560/IsaacSuntag2.jpg?format=1000w">
+							<img src="" alt=""/>
 							<h3>Travel Buddy</h3>
 							<h4>Python</h4>
-							<p>A simple travel planning application that allows users to create trips and join the trips of other users. Created in 2.5 hours with Django.</p>
+							<p>A simple travel planning application that allows users to create trips and join the trips of other users. Created with Django.</p>
 						</div>
 					</div>
 				</div>

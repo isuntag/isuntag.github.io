@@ -15,6 +15,12 @@ a, a:hover, a:visited {
 	// color: inherit;
 }
 
+@media screen and (max-width: 991px) {
+  #header, #contact {
+    background-attachment: scroll !important;
+  }
+}
+
 // SASS
 html, body {
 	height: 100%;
@@ -72,12 +78,12 @@ nav {
   top: 0px;
   width: 100%;
   transition: 0.3s;
-  z-index: 100;
+  z-index: 1;
   padding: 0;
   display: none;
 }
 @media only screen and (max-width: 576px) {
-  #smallNav {
+  #smallNav, #largeNav {
     display: none;
   }
  }
@@ -101,7 +107,7 @@ nav {
 section {
 	min-height: 100%;
 }
-#about, #portfolio, #contact {
+#about, #portfolio, #contact, footer {
 	padding: 40px 10px;
 }
 #header {
@@ -118,6 +124,9 @@ section {
 	p {
 		text-indent: 3em;
 	}
+	img {
+		max-height: 450px;
+	}
 }
 #portfolio {
 	// background-color: #100806;
@@ -132,6 +141,11 @@ section {
 }
 #contact {
 	text-align: center;
+	background: url("city.jpg") center center no-repeat fixed #2b3f00;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	textarea {
 		min-height: 150px;
 	}
@@ -153,7 +167,7 @@ section {
 	input[type="submit"] {
 		background-color: black;
 	  color: white;
-	  border: none;
+	  border: 1px solid darkgray;
 	  opacity: 1;
 	  -webkit-transition: opacity 360ms;
 	  transition: opacity 360ms;
@@ -170,4 +184,82 @@ footer {
 		font-size: 90%;
 		color: rgba(255,255,255,.7);
 	}
+}
+
+
+// Mobile Side Nav
+  .mobileNavOpen {
+		position: fixed;
+		top:0;
+		left:0;
+		padding: 10px;
+		display:block;
+		z-index: 2;
+		font-size: 30px;
+	}
+	.mobileNavOpen i  {
+		color: rgb(255,255,255);
+		color: rgba(255,255,255,.7);
+		transition: 0.3s;
+	}
+	.mobileNavOpen i:hover {
+		color: rgba(255,255,255,1)
+	}
+	.mobileNavOpen:hover {
+		cursor: pointer;
+	}
+	.overlay {    
+		display: none;
+	  height: 100%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 2;
+	  left: 0;
+	  top: 0;
+	  background-color: rgb(0,0,0);
+	  background-color: rgba(0,0,0, 0.9);
+	  overflow-x: hidden; 
+	}
+	.overlay-content {
+	  position: relative;
+	  top: 25%;
+	  width: 100%;
+	  text-align: center;
+	  margin-top: 30px;
+	}
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+	.overlay a:hover, .overlay a:focus {
+	  color: #f1f1f1;
+	}
+	.overlay .mobileNavClose {
+	  position: absolute;
+	  top: 20px;
+	  right: 45px;
+	  font-size: 60px;
+	}
+	.overlay .mobileNavClose:hover {
+		cursor: pointer;
+	}
+	.overlay .active {
+		color: white;
+	}
+	@media screen and (max-height: 450px) {
+	  .overlay a {font-size: 20px}
+	  .overlay .mobileNavClose {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+	  }
+	}
+@media only screen and (min-width: 577px) {
+	.mobileNavOpen, #mobileNav {
+		display: none;
+	} 
 }
