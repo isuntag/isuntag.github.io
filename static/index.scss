@@ -1,0 +1,173 @@
+// Reset
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: 300;
+	font-family: 'Source Code Pro', sans-serif;
+	vertical-align: baseline;
+	background: transparent;
+	color: #FFF;
+}
+a, a:hover, a:visited {
+	text-decoration: none !important;
+	// color: inherit;
+}
+
+// SASS
+html, body {
+	height: 100%;
+	// height: 100vh;
+	background-color: #100806;
+}
+
+h1 {
+	font-family: 'Abel';
+	font-size: 96px !important;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	width: 100%;
+}
+img {
+	max-width: 100%;
+}
+nav {
+  padding: 15px 0;
+  text-align:center;
+  font-weight: 100;
+  ul, li {
+  	margin: 0 !important;
+  	padding: 0 !important;
+  }
+
+  a {
+  	display:inline-block;
+    padding:10px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.7);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  a:hover {
+  	color: #FFF;
+  }
+  .home {
+  	font-size: 18px !important;
+  	color: #e7d0ba !important;
+  	letter-spacing: 0.166667em !important;
+  	padding: 5px 30px 10px 30px;
+  	margin: 0 50px 10px 50px;
+  }
+  .active {
+  	color: #FFF;
+  }
+}
+#smallNav {
+  background-color: #100806;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 100;
+  padding: 0;
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #smallNav {
+    display: none;
+  }
+ }
+.socials, .socials a {
+	color: #FFF;
+	transition: 0.3s;
+	text-align: center;
+	font-size: 16pt;
+}
+.socials:hover {
+	color: rgba(255,255,255,.6);
+	a {
+		color: rgba(255,255,255,.6);
+		transition: 0.3s;
+	}
+}
+.socials a:hover {
+	color: #FFF !important;
+	text-decoration: none;
+}
+section {
+	min-height: 100%;
+}
+#about, #portfolio, #contact {
+	padding: 40px 10px;
+}
+#header {
+	text-align: center;
+	padding: 10px;
+	background: url("fern.jpg") center center no-repeat fixed #2b3f00;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about {
+	// background-color: #100806;
+	p {
+		text-indent: 3em;
+	}
+}
+#portfolio {
+	// background-color: #100806;
+	text-align: center;
+	.project {
+		padding: 10px 0;
+	}
+	img {
+		// max-width: 100%;
+		max-height: 300px;
+	}
+}
+#contact {
+	text-align: center;
+	textarea {
+		min-height: 150px;
+	}
+	input, textarea {
+		margin-top: 16px;
+	  width: 60%;
+	  padding: 10px;
+	  font: inherit;
+	  font-size: 0.7em !important;
+	  border-radius: 2px;
+	  border: 1px solid darkgray;
+	  -webkit-transition: border 360ms;
+	  transition: border 360ms
+	}
+	input:focus, textarea:focus {
+		outline: none;
+  	border: 1px solid black;
+	}
+	input[type="submit"] {
+		background-color: black;
+	  color: white;
+	  border: none;
+	  opacity: 1;
+	  -webkit-transition: opacity 360ms;
+	  transition: opacity 360ms;
+	}
+	input[type="submit"]:hover {
+	  cursor: pointer;
+	  opacity: 0.6;
+	}
+}
+footer {
+	min-height: 100px;
+	text-align: center;
+	p {
+		font-size: 90%;
+		color: rgba(255,255,255,.7);
+	}
+}
