@@ -17,15 +17,20 @@ a, a:hover, a:visited {
     background-attachment: scroll !important; } }
 html, body {
   height: 100%;
+  height: 100vh;
   background-color: #100806; }
 
 h1 {
   font-family: 'Abel';
-  font-size: 96px !important;
+  font-size: 60px !important;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 7px;
   width: 100%; }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 7px; }
 
 img {
   max-width: 100%; }
@@ -45,6 +50,7 @@ nav {
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
   nav a:hover {
     color: #FFF; }
@@ -62,6 +68,7 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 1;
   padding: 0;
@@ -72,6 +79,7 @@ nav {
     display: none; } }
 .socials, .socials a {
   color: #FFF;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-align: center;
   font-size: 16pt; }
@@ -80,6 +88,7 @@ nav {
   color: rgba(255, 255, 255, 0.6); }
   .socials:hover a {
     color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: 0.3s;
     transition: 0.3s; }
 
 .socials a:hover {
@@ -100,6 +109,8 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  #header h1 {
+    font-size: 96px !important; }
 
 #about p {
   text-indent: 3em; }
@@ -111,6 +122,7 @@ section {
   #portfolio .project {
     padding: 10px 0; }
   #portfolio img {
+    max-width: 100%;
     max-height: 300px; }
 
 #contact {
@@ -127,7 +139,7 @@ section {
     width: 60%;
     padding: 10px;
     font: inherit;
-    font-size: 0.7em !important;
+    font-size: 0.8em !important;
     border-radius: 2px;
     border: 1px solid darkgray;
     -webkit-transition: border 360ms;
@@ -150,7 +162,7 @@ footer {
   min-height: 100px;
   text-align: center; }
   footer p {
-    font-size: 90%;
+    font-size: 0.7em;
     color: rgba(255, 255, 255, 0.7); }
 
 .mobileNavOpen {
@@ -198,6 +210,7 @@ footer {
   font-size: 36px;
   color: #818181;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s; }
 
 .overlay a:hover, .overlay a:focus {

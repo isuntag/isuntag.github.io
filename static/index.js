@@ -10,16 +10,17 @@ $(document).ready(function () {
         $('#smallNav a.active').removeClass('active');
         $(`a[href$='about']`, '#smallNav').addClass('active');
       }
-      if (!disable_scroll && $(window).scrollTop() >= $('#portfolio').offset().top - $('#smallNav').outerHeight() && $(window).scrollTop() < $('#contact').offset().top) {
+      if (!disable_scroll && $(window).scrollTop() >= $('#portfolio').offset().top && $(window).scrollTop() < $('#contact').offset().top) {
         $('#smallNav a.active').removeClass('active');
         $(`a[href$='portfolio']`, '#smallNav').addClass('active');
       }
-      if (!disable_scroll && $(window).scrollTop() >= $('#contact').offset().top - $('#smallNav').outerHeight()) {
+      if (!disable_scroll && $(window).scrollTop() >= $('#contact').offset().top) {
         $('#smallNav a.active').removeClass('active');
         $(`a[href$='contact']`, '#smallNav').addClass('active');
       }
     }
     else if($(window).width() <= 576){
+      $("#smallNav").fadeOut(100);
       if(!disable_scroll && $(window).scrollTop() < $('#about').offset().top ) {
         $('.overlay-content a.active').removeClass('active');
         $(`a[href$='header']`, '.overlay-content').addClass('active');
