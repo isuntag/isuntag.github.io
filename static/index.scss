@@ -139,8 +139,11 @@ section {
 	}
 	img {
 		max-height: 450px;
+		display: block;
+		margin: auto;
 	}
 	.resume {
+		margin: 10px 0;
 		a {
 			padding: 5px;
 			background-color: black;
