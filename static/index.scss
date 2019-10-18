@@ -134,12 +134,27 @@ section {
 	}
 }
 #about {
-	// background-color: #100806;
 	p {
 		text-indent: 3em;
 	}
 	img {
 		max-height: 450px;
+	}
+	.resume {
+		a {
+			padding: 5px;
+			background-color: black;
+		  color: rgba(255,255,255,.7);
+		  border: 1px solid rgba(255,255,255,.7);
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    letter-spacing: 2px;
+	    text-transform: uppercase;
+	    @include transition(0.3s);
+	  }
+	  a:hover {
+	  	color: #FFF;
+	  }
 	}
 }
 #portfolio {
@@ -150,6 +165,33 @@ section {
 	img {
 		max-width: 100%;
 		max-height: 300px;
+	}
+	h2 {
+		padding: 5px 0;
+		margin: 40px 0 10px 0;
+		color: rgba(255,255,255,.7);
+		border-bottom: 1px dotted rgba(255,255,255,.7);
+	}
+	.images {
+		margin: 10px;
+		img {
+			max-height: 300px;
+			margin: 10px;
+		}
+	}
+	.more {
+		padding: 5px;
+		background-color: black;
+	  color: rgba(255,255,255,.7);
+	  border: 1px solid rgba(255,255,255,.7);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include transition(0.3s);
+	}
+	.more:hover {
+		color: #FFF;
 	}
 }
 #contact {
@@ -216,7 +258,7 @@ footer {
 	.mobileNavOpen:hover {
 		cursor: pointer;
 	}
-	.overlay {    
+	.overlay {
 		display: none;
 	  height: 100%;
 	  width: 100%;
@@ -226,7 +268,7 @@ footer {
 	  top: 0;
 	  background-color: rgb(0,0,0);
 	  background-color: rgba(0,0,0, 0.9);
-	  overflow-x: hidden; 
+	  overflow-x: hidden;
 	}
 	.overlay-content {
 	  position: relative;
@@ -269,5 +311,5 @@ footer {
 @media only screen and (min-width: 577px) {
 	.mobileNavOpen, #mobileNav {
 		display: none;
-	} 
+	}
 }

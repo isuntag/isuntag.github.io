@@ -116,6 +116,19 @@ section {
   text-indent: 3em; }
 #about img {
   max-height: 450px; }
+#about .resume a {
+  padding: 5px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+#about .resume a:hover {
+  color: #FFF; }
 
 #portfolio {
   text-align: center; }
@@ -124,6 +137,29 @@ section {
   #portfolio img {
     max-width: 100%;
     max-height: 300px; }
+  #portfolio h2 {
+    padding: 5px 0;
+    margin: 40px 0 10px 0;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.7); }
+  #portfolio .images {
+    margin: 10px; }
+    #portfolio .images img {
+      max-height: 300px;
+      margin: 10px; }
+  #portfolio .more {
+    padding: 5px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  #portfolio .more:hover {
+    color: #FFF; }
 
 #contact {
   text-align: center;
