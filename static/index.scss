@@ -172,7 +172,6 @@ section {
 	h2 {
 		padding: 5px 0;
 		margin: 40px 0 10px 0;
-		color: rgba(255,255,255,.7);
 		border-bottom: 1px dotted rgba(255,255,255,.7);
 	}
 	.images {
@@ -196,6 +195,36 @@ section {
 	.more:hover {
 		color: #FFF;
 	}
+}
+.modal-content {
+	background-color: black !important;
+	color: #FFF;
+	border: 1px solid rgba(255,255,255,.7) !important;
+	p {
+		text-align: left !important;
+	}
+	h4 {
+		text-align: left;
+	}
+}
+#portfolio ul {
+	text-align: left;
+	li {
+		margin-left: 2em;
+		margin-right: 2em;
+		color: rgba(255,255,255,.7);
+	}
+}
+.modal-title {
+	font: 30px 'Abel';
+}
+.modal-header {
+	border-bottom: 1px solid rgba(255,255,255,.7) !important;
+}
+p.inset {
+	margin-left: 2em;
+	margin-right: 2em;
+	color: rgba(255,255,255,.7) !important;
 }
 #contact {
 	text-align: center;

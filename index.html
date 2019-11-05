@@ -75,6 +75,7 @@
 				<div class="col-12 col-sm-6 col-lg-4">
 					<img src="static/IsaacSuntag.jpg" alt="Isaac Suntag headshot" class="headshot"/>
 					<div class="col-12 text-center resume"><a href="static/IsaacSuntagResume.pdf" target="_blank" download>Download Resume</a></div>
+					<div class="col-12 text-center resume"><a href="static/IsaacSuntagPortfolio.pdf" target="_blank" download>Download Portfolio</a></div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4">
 					<h1>Who Am I?</h1>
@@ -95,9 +96,97 @@
 							<div class="images"><img class="d-none d-lg-inline" src="static/FMPProfile.png" alt="Find My Pet application pet profile screen."/><img src="static/FMPHome.png" alt="Find My Pet application home screen."/><img class="d-none d-lg-inline" src="static/FMPNav.png" alt="Find My Pet application navigation screen."/> </div>
 							<h3>Find My Pet</h3>
 							<p>A GPS tracking application to find wayward pets.</p>
-							<!-- <a class="more" href="" target="_blank">Learn More</a> -->
+							<a class="more" data-toggle="modal" data-target="#findmypet">Learn More</a>
 						</div>
 					</div>
+				</div>
+				<div class="modal fade" id="findmypet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h1 class="modal-title" id="exampleModalLabel">Find My Pet</h1>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+								<div class="container-fluid">
+								<div class="images"><img class="d-none d-lg-inline" src="static/FMPProfile.png" alt="Find My Pet application pet profile screen."/><img src="static/FMPHome.png" alt="Find My Pet application home screen."/><img class="d-none d-lg-inline" src="static/FMPNav.png" alt="Find My Pet application navigation screen."/> </div>
+				        <h2>Project Summary</h2>
+								<p>Find My Pet is a mapping application connecting to a GPS transmitting dog tag. The product allows people to track down wayward pets who may have got lost, run away, or been dognapped. My role was to research, design, and test the mapping application.</p>
+								<h4>Design Tools & Methods Used</h4>
+								<p>User affinity sorting, personas, paper prototyping, wireframes, Sketch, A/B Testing, electronic prototyping.</p>
+								<h2>Define</h2>
+									<h4>Strategic objectives</h4>
+									<p>The design of the GPS dog tag has been finalized. All work needs to be done for the application.</p>
+									<h4>Requirements</h4>
+									<p>The company is thinking of a smartphone application for the mapping system, but leaves the final decision of implementation and use to be based on the user need. If the user research shows a better use of the product would be to help parents find their wayward teenager, the team would design that instead. It will depend on the user research.</p>
+									<h4>Business & User Goals</h4>
+									<p>Track wayward pets. The user research will show the user needs and the changes the app will need to meet them.</p>
+								<h2>Discover</h2>
+									<h4>User Research</h4>
+									<p>I interviewed 5 people, age 25-65, to evaluate the need for the system. I focused on the body language as well as the verbal responses from the participants.</p>
+									<h4>Affinity Sorting</h4>
+									<p>I used affinity sorting to define my personas and red routes.</p>
+									<div class="images"><img src="static/FMPSorting.jpg" alt="Affinity sorting of user research for Find My Pet application."/></div>
+									<p class="inset">Above shows the results of the affinity sorting. The yellow notes are observations I made and the green notes are the common themes or tasks of the observations.</p>
+									<h4>Personas</h4>
+									<p>Three groups stood out: experienced wayward pet owners, users concerned about petnappers, and tech savvy users who like many features in applications.</p>
+									<p>My primary persona is Karl Carson. I knew if I was able to satisfy this user's needs then I would also satisfy the needs of 4 out of the 5 uses. In order to please the tech savvy user an update could be made available that let the user track the pet's movements and provides satistics about the pet's health.</p>
+									<p class="inset">Karl Carson is a 30 year old male who lives alone with his 2 year old Chihuahua Fluffy. Karl often leaves Fluffy alone at home when he goes out and is worried Fluffy might escape if he leaves a window open by accident. He has had pets run away before so he knows that immediate action is required to find them. He wants to feel comfortable leaving Fluffy at home knowing that he will recieve a notifcation if Fluffy leaves the perimeter around his house.</p>
+									<p>Based on the user research I found that the application would work best as a mobile application and it needed to incude easy to use mapping, detailed navigation, a list of contacts like the local shelters, and the ability to add multiple pets.</p>
+									<p>I created red routes for the application and the main secenario of use based on my primary person and its user story.</p>
+									<p class="inset">Karl is out at dinner when he gets a notification that Fluffy has left the set perimeter. He opens the Find My Pet application and uses it to search for and find Fluffy.</p>
+								<h2>Design</h2>
+									<h4>Sketches</h4>
+									<p>I drew out the main screens that would be needed to complete the goal of the main secenario.</p>
+									<div class="images"><img src="static/FMPSketches.jpg" alt="Sketches of Find My Pet application main pages."/></div>
+									<p class="inset">Above is an image of one of the pages of sketches I created to iterate through ideas to find the one that would best work for the application.</p>
+									<h4>Paper Prototyping</h4>
+									<p>I created paper prototypes to iterate through many designs based on the list of required features. These were used for user testing.</p>
+									<div class="images"><img src="static/FMPPaperPrototypes.jpg" alt="Paper prototypes of Find My Pet application."/></div>
+									<p class="inset">Above is an image of all the pieces of the paper prototypes I created including those for A/B testing.</p>
+									<h4>A/B Testing</h4>
+									<p>A/B testing was used to identify the most intuitive features.</p>
+									<div class="row justify-content-center">
+										<div class="col-md-6">
+											<div class="images"><img src="static/FMPTest1.jpg" alt="Image showing the difference between a home start page and a Find Pet start page."/></div>
+											<p class="inset">Starting on the "Find Pet" page instead of a home page with options of actions was preferred by 4 out of 5 users.</p>
+										</div>
+										<div class="col-md-6">
+											<div class="images"><img src="static/FMPTest3.jpg" alt="Paper prototypes of Find My Pet application."/></div>
+											<p class="inset">4 out of 5 users found the magnifying glass more intuitive than the radar for the Find Pet icon.</p>
+										</div>
+									</div>
+									<div class="row justify-content-center">
+										<div class="col-md-6">
+											<div class="images"><img src="static/FMPTest2.jpg" alt="Paper prototypes of Find My Pet application."/></div>
+											<p class="inset">3 out of 5 users preferred just having a bottom navigation bar with the options instead of a bottom navigation bar with a home link and a hamburger menu with the same links.</p>
+										</div>
+										<div class="col-md-6">
+											<div class="images"><img src="static/FMPTest4.jpg" alt="Paper prototypes of Find My Pet application."/></div>
+											<p class="inset">4 out of 5 users preferred icons for all pages of the application instead of a text only but larger button for the Find Pet page.</p>
+										</div>
+									</div>
+									<h4>Usability Testing</h4>
+									<p>Once the screens had the most intuitive features I performed usability testing with 6 users, age 24-52. The application concept was relatively straightforward so I wanted to test if my prototype was as streamlined as I thought.</p>
+									<p>Redesigns to the paper prototype that came from this testing were:
+										<ul>
+											<li>Added the breed to the pet’s profile</li>
+											<li>Bigger size on the font for the maps screens after the observations “I can’t read that” </li>
+										</ul>
+									</p>
+									<h4>Electronic Prototyping</h4>
+									<p>After the usability tests had concluded I created an electronic prototype in Sketch.</p>
+									<div class="images"><img src="static/FMPProfile.png" alt="Find My Pet application pet profile screen."/><img src="static/FMPHome.png" alt="Find My Pet application home screen."/><img src="static/FMPNav.png" alt="Find My Pet application navigation screen."/> </div>
+									<h4>Measuring Usability</h4>
+									<p><b>Effectiveness:</b> The success rate of participants correctly completing the goal for the scenario unassisted was 100%. The participants also completed 100% of the tasks on the first attempt.</p>
+									<p><b>Efficiency:</b> The average time taken to complete each task was less than a minute. 100% of participants were able to find a pet with no added clicks. There were no errors to correct.</p>
+									<p><b>Satisfaction:</b> There were no negative reactions to the application. Positive reactions included "It gives me very clear directions to find the lost pet," "I knew what I needed to do easily," and "it was pretty intuitive to use."</p>
+								</div>
+							</div>
+				    </div>
+				  </div>
 				</div>
 				<div class="col-12 ">
 					<h2>Full Stack Projects</h2>
